@@ -1,12 +1,15 @@
 import React from "react";
+import CardListContainer from "./CardListContainer";
 
-const Landing = ({ contador, sumar, restar }) => {
+import Counter from "./Counter";
+
+
+const Landing = () => {
   return (
-    <div>
-      <button onClick={sumar}>+</button>
-      <button onClick={restar}>-</button>
-      <h3>{contador}</h3>
-    </div>
+    <>
+    <Counter />
+    <CardListContainer />
+    </>
   );
 };
 
