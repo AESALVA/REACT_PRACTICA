@@ -10,8 +10,8 @@ const CardList = ({data}) => {
   return (
     <Container> 
     <Row>
-      {data.map((product)=>(
-        <Col xs={12} md={4}>
+      {data.map((product,i)=>(
+        <Col key={i} xs={12} md={4}>
         <Product product={product} />
         </Col>
       ))}
