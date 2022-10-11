@@ -5,6 +5,8 @@ import Landing from "../components/Landing";
 import Container from "react-bootstrap/Container";
 import { Routes,Route, Link } from "react-router-dom";
 import Product from "../components/Product";
+import ProductDetail from "../components/ProductDetail";
+import ProductDetailContainer from "../components/ProductDetailContainer";
 
 
 const Home = () => {
@@ -13,7 +15,7 @@ const Home = () => {
       <Header />
       <Routes>
         <Route element={<Landing />} path="/" />
-        <Route element={<Product />} path="/product/"/>
+        <Route element={<ProductDetailContainer />} path="/product/:id"/>
       </Routes>
       <Footer />
     </Container>
